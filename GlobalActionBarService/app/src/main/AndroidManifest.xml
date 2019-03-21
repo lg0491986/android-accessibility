@@ -18,9 +18,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.globalactionbarservice">
 
-    <application>
+    <application
+        android:label="@string/aby_label">
         <service
             android:name=".GlobalActionBarService"
+            android:label="@string/aby_label_service"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
